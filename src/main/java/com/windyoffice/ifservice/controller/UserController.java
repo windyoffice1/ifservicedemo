@@ -2,6 +2,7 @@ package com.windyoffice.ifservice.controller;
 
 import com.windyoffice.ifservice.common.ServerResponse;
 import com.windyoffice.ifservice.pojo.User;
+import com.windyoffice.ifservice.pojo.UserRequest;
 import com.windyoffice.ifservice.service.IUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,8 +26,15 @@ public class UserController {
     @ResponseBody
     public ServerResponse<User> getUserInfo(String userName){
 
-        logger.info("getUserInfo");
+        logger.info(" UserController getUserInfo");
         return userService.getUserInfo(userName);
     };
 
+
+    @RequestMapping(value ="getuserinfoBySign.do",method = RequestMethod.POST)
+    @ResponseBody
+    public ServerResponse<User> getUserInfoBySign(UserRequest request){
+        logger.info(" UserController getUserInfo");
+        return userService.getUserInfoBySing(request);
+    };
 }

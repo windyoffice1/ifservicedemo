@@ -4,7 +4,6 @@
          updateCheck="false">
 
     <diskStore path="java.io.tmpdir" />
-
     <defaultCache eternal="false"
                   maxElementsInMemory="1000"
                   overflowToDisk="false"
@@ -15,7 +14,7 @@
 
     <cache name="myCache"
            eternal="false"
-           maxElementsInMemory="100"
+           maxElementsInMemory="1000"
            overflowToDisk="false"
            diskPersistent="false"
            timeToIdleSeconds="10"
