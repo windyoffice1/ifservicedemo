@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ifservicedemo:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ifservicedemo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ifservicedemo.war">
+      <element id="artifact" artifact-name="ifservicedemo:war exploded" />
+    </root>
+  </artifact>
+</component>
